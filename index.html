@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>My site</title>
+  </head>
+  <body>
+    <!-- top button  -->
+    <div class="go_top"><i class="xi-angle-up"></i></div>
+
+    <!-- header  -->
+    <div class="header">
+      <div class="container">
+        <ul class="nav">
+          <li>
+            <a href="index.html"><img src="./images/my_photo.png" alt="logo" /></a>
+          </li>
+          <li><a href="#" class="on">Profile</a></li>
+          <li><a href="./contents.html">Contents</a></li>
+          <li><a href="#">Banner</a></li>
+          <li><a href="#">Responsive Web</a></li>
+          <li><a href="#">Figma</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- slider -->
+    <div class="slider">
+      <div class="slide_01"></div>
+    </div>
+
+    <!-- section_01 about me -->
+    <div class="section_01">
+      <div class="container">
+        <div class="photo">
+          <img src="./images/my_photo_02.png" alt="photo" />
+        </div>
+        <div class="text">
+          <h4>About me</h4>
+          <p class="text_01">
+            새로운 것과 모험을 좋아합니다.<br />
+            자기개발을 위해 다양한 시도를 하는 편이며<br />
+            현재 등산, 러닝을 취미로 생활하고 있습니다.<br />
+            끊임없이 탐구하고 배우고싶어하는 열정이 장점이라고 생각합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- section_02 profile -->
+    <div class="section_02">
+      <div class="container">
+        <div class="photo">
+          <img src="./images/my_photo_03.png" alt="증명사진" />
+        </div>
+        <div class="text">
+          <p>
+            이름 : 이지현 <br />
+            생년월일 : 1995.04.14 <br />
+            거주지 : 부산광역시 동래구 <br />
+            연락처 : 010. 5127. 6651 <br />
+            이메일 : jihyun6651@naver.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- section_03 skill -->
+    <div class="section_03">
+      <div class="container">
+        <h4>Skill</h4>
+        <ul class="tool">
+          <li>
+            <img src="./images/tool/Tool_01.png" alt="포토샵" />
+            <p>
+              Adobe<br />
+              Photoshop
+            </p>
+          </li>
+          <li>
+            <img src="./images/tool/Tool_02.png" alt="일러스트" />
+            <p>
+              Adobe<br />
+              illustrator
+            </p>
+          </li>
+          <li>
+            <img src="./images/tool/Tool_03.png" alt="라이트룸" />
+            <p>
+              Adobe<br />
+              Lightroom
+            </p>
+          </li>
+          <!-- <li>
+            <img src="./images/tool/Tool_04.png" alt="프리미어" />
+          </li> -->
+          <li>
+            <img src="./images/tool/Tool_05.png" alt="피그마" />
+            <p>Figma</p>
+          </li>
+          <li>
+            <img src="./images/tool/Tool_06.png" alt="HTML5" />
+            <p>HTML5</p>
+          </li>
+          <li>
+            <img src="./images/tool/Tool_07.png" alt="CSS3" />
+            <p>CSS3</p>
+          </li>
+          <li>
+            <img src="./images/tool/Tool_08.png" alt="JAVA" />
+            <p>JAVA</p>
+          </li>
+          <li>
+            <img src="./images/tool/Tool_09.png" alt="JQUERY" />
+            <p>JQUERY</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <p class="copyright">ⓒ Copyright 2020. All Right Reserved</p>
+    </div>
+
+    <script>
+      // 헤더 스크립트
+      var goTop = $('.go_top')
+      $(window).scroll(function () {
+        var scrollTopValue = $(document).scrollTop()
+
+        if (scrollTopValue > 10) {
+          goTop.fadeIn()
+        } else {
+          goTop.fadeOut()
+        }
+      })
+
+      goTop.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 400)
+      })
+    </script>
+  </body>
+</html>

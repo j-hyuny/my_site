@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contents.css" />
+
+    <title>My site:contents</title>
+  </head>
+  <body>
+    <!-- top button  -->
+    <div class="go_top"><i class="xi-angle-up"></i></div>
+
+    <!-- header  -->
+    <div class="header">
+      <div class="container">
+        <ul class="nav">
+          <li>
+            <a href="index.html"><img src="./images/my_photo.png" alt="logo" /></a>
+          </li>
+          <li><a href="./index.html">Profile</a></li>
+          <li><a href="#" class="on">Contents</a></li>
+          <li><a href="#">Banner</a></li>
+          <li><a href="#">Responsive Web</a></li>
+          <li><a href="#">Figma</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- slider -->
+    <div class="slider">
+      <div class="slide_01"></div>
+    </div>
+
+    <!-- section_03 skill -->
+    <div class="contents_01">
+      <div class="container">
+        <h4>컨텐츠 페이지</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+          Delectus nobis enim impedit quibusdam unde numquam praesentium voluptatibus,<br />
+          officiis atque sed, repellendus asperiores reprehenderit voluptates?
+        </p>
+        <ul class="contents">
+          <li class="contents_item"></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <p class="copyright">ⓒ Copyright 2020. All Right Reserved</p>
+    </div>
+
+    <script>
+      // 헤더 스크립트
+      var goTop = $('.go_top')
+      $(window).scroll(function () {
+        var scrollTopValue = $(document).scrollTop()
+
+        if (scrollTopValue > 10) {
+          goTop.fadeIn()
+        } else {
+          goTop.fadeOut()
+        }
+      })
+
+      goTop.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 400)
+      })
+    </script>
+  </body>
+</html>

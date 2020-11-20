@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h4 {
+  font-size: 40px;
+  color: #282828;
+  font-weight: 700;
+}
+
+p {
+  font-size: 17px;
+  color: #262626;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1000px;
+  width: 92%; /*반응형*/
+  margin: 0 auto;
+  position: relative;
+}
+
+.go_top {
+  position: fixed; /*고정*/
+  right: 30px;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.12);
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+/* header */
+.header {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  position: fixed;
+  width: 100%;
+  max-height: 44px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li {
+  max-width: 1280px;
+}
+
+.header ul a {
+  height: 44px;
+  line-height: 44px;
+}
+
+/* slide  */
+.slide_01 {
+  background-image: url(../images/slide_01.jpg);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* section_01 */
+.section_01 {
+  /* max-width: 1300px; */
+  display: flex;
+  justify-content: center;
+}
+
+.section_01 .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 175px 0;
+}
+
+.section_01 .text {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.section_01 h4 {
+  padding-bottom: 80px;
+}
+
+.section_01 p {
+  line-height: 2;
+}
+
+/* section_02 */
+.section_02 {
+  height: 1000px;
+  background: url(../images/bg.png);
+  /* filter: brightness(50%); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section_02 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 285px 0;
+}
+
+.section_02 .photo {
+  margin-right: 130px;
+}
+
+.section_02 p {
+  color: #fff;
+  line-height: 2;
+}
+
+/* section_03 */
+.section_03 {
+  padding: 230px 0;
+}
+
+.section_03 .container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_03 h4 {
+  padding-bottom: 150px;
+}
+
+.tool {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.tool p {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 0 50px;
+  line-height: 1.4;
+}
+
+/* footer */
+.footer {
+  background: #f5f5f7;
+}
+
+.footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #86868b;
+  padding: 20px 0;
+  font-size: 11px;
+}
