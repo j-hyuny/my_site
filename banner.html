@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/contents.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
     <title>My site:contents</title>
   </head>
   <body>
@@ -24,8 +25,8 @@
             <a href="index.html"><img src="./images/my_photo.png" alt="logo" /></a>
           </li>
           <li><a href="./index.html">Profile</a></li>
-          <li><a href="#" class="on">Contents</a></li>
-          <li><a href="./banner.html">Banner</a></li>
+          <li><a href="./contents.html">Contents</a></li>
+          <li><a href="#" class="on">Banner</a></li>
           <li><a href="#">Responsive Web</a></li>
           <li><a href="#">Figma</a></li>
         </ul>
@@ -38,36 +39,25 @@
     </div> -->
 
     <!-- section_03 skill -->
-    <h2 class="title">Lorem, ipsum dolor.</h2>
-    <section></section>
-    <div class="contents_01">
-      <h4>컨텐츠 페이지</h4>
+    <div class="banner">
+      <h4>Banner</h4>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
         Delectus nobis enim impedit quibusdam unde numquam praesentium voluptatibus,<br />
         officiis atque sed, repellendus asperiores reprehenderit voluptates?
       </p>
-      <!-- 모달적용예정 -->
-      <ul class="cards">
-        <li class="card">
-          <img src="./images/contents/card_01.png" alt="img" />
-        </li>
-        <li class="card">
-          <img src="./images/contents/card_01.png" alt="img" />
-        </li>
-        <li class="card">
-          <img src="./images/contents/card_01.png" alt="img" />
-        </li>
-        <li class="card">
-          <img src="./images/contents/card_01.png" alt="img" />
-        </li>
-        <li class="card">
-          <img src="./images/contents/card_01.png" alt="img" />
-        </li>
-        <li class="card">
-          <img src="./images/contents/card_01.png" alt="img" />
-        </li>
-      </ul>
+      <!-- 슬라이드 01 -->
+      <div class="slide_01">
+        <div class="item item_01"></div>
+        <div class="item item_02"></div>
+        <div class="item item_03"></div>
+      </div>
+
+      <!-- 슬라이드 화살표 -->
+      <div class="arrow">
+        <span class="prev"><img src="./images/banner/prev_btn.png" alt="btn" /></span>
+        <span class="next"><img src="./images/banner/next_btn.png" alt="btn" /></span>
+      </div>
     </div>
 
     <!-- footer -->
@@ -77,20 +67,13 @@
 
     <script src="./js/contents.js"></script>
     <script>
-      // 헤더 스크립트
-      var goTop = $('.go_top')
-      $(window).scroll(function () {
-        var scrollTopValue = $(document).scrollTop()
-
-        if (scrollTopValue > 10) {
-          goTop.fadeIn()
-        } else {
-          goTop.fadeOut()
-        }
-      })
-
-      goTop.click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 400)
+      // 슬라이드
+      $('.slide_01').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
       })
     </script>
   </body>
