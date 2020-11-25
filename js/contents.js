@@ -1,3 +1,4 @@
+// scroll_effect
 const section = document.querySelector('section')
 
 window.addEventListener('scroll', function () {
