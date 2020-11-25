@@ -63,17 +63,28 @@ p {
   z-index: 100;
 }
 
-.header ul {
+.header .container {
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
-.header ul li {
-  max-width: 1280px;
+.logo {
+  width: 27px;
 }
 
-.header ul a {
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.nav a {
+  display: block;
+  padding: 0 20px;
   height: 44px;
   line-height: 44px;
 }
@@ -172,8 +183,9 @@ p {
 }
 
 .tool {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
   /* flex-wrap: wrap; */
 }
 
@@ -200,17 +212,26 @@ p {
 
 /* 미디어 쿼리  pc*/
 @media (max-width: 900px) {
+  .container {
+    width: 96%; /*반응형*/
+  }
+
   .header {
-    padding: 0 30px;
+    padding: 0 16px;
     height: 80px;
     display: flex;
     align-items: center;
     position: absolute; /*gnb 때문에 필요*/
+    max-height: initial;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
     box-sizing: border-box; /*padding 값 때문에 필요*/
+  }
+
+  .header .container {
+    position: relative;
   }
 
   .nav {
@@ -246,15 +267,34 @@ p {
     padding: 20px;
   }
 
-  .bars {
-    display: block;
+  .logo {
     position: absolute;
-    top: 5px;
-    left: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bars {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
   }
 
   .bars i {
     font-size: 30px;
+  }
+
+  .bars.fixed {
+    position: fixed;
+    top: 40px;
+    left: 32px;
+  }
+
+  .tool {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
 
   /* .logo {
