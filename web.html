@@ -74,6 +74,22 @@
 
     <script src="./js/contents.js"></script>
     <script>
+      // 메뉴
+      var bars = $('.bars')
+      var nav = $('.nav')
+
+      bars.on('click', function () {
+        nav.toggleClass('active')
+        $(this).toggleClass('fixed')
+        // $(this).css('position', 'fixed')
+
+        if ($(this).find('i').hasClass('xi-bars')) {
+          $(this).find('i').attr('class', 'xi-close')
+        } else {
+          $(this).find('i').attr('class', 'xi-bars')
+        }
+      })
+
       // 헤더 스크립트
       var goTop = $('.go_top')
       $(window).scroll(function () {
