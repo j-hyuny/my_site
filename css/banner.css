@@ -20,6 +20,7 @@
 .main_slide {
   position: relative;
   margin-bottom: 70px;
+  margin: 0 auto;
 }
 
 .arrow {

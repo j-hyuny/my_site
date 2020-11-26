@@ -210,15 +210,15 @@ p {
   font-size: 11px;
 }
 
-/* 미디어 쿼리  pc*/
-@media (max-width: 900px) {
+/* 미디어 쿼리  모바일*/
+@media (max-width: 770px) {
   .container {
     width: 96%; /*반응형*/
   }
 
   .header {
     padding: 0 16px;
-    height: 80px;
+    height: 48px;
     display: flex;
     align-items: center;
     position: absolute; /*gnb 때문에 필요*/
@@ -252,12 +252,12 @@ p {
     left: 0;
   }
 
-  .nav li a:nth-child(1) {
-    display: block;
+  .nav li a {
+    /* display: block; */
     padding: 20px 0;
   }
 
-  .nav li a:nth-child(2),
+  /* .nav li a:nth-child(2),
   .nav li a:nth-child(3),
   .nav li a:nth-child(4),
   .nav li a:nth-child(5),
@@ -265,7 +265,7 @@ p {
     display: block;
     font-size: 17px;
     padding: 20px;
-  }
+  } */
 
   .logo {
     position: absolute;
@@ -288,8 +288,8 @@ p {
 
   .bars.fixed {
     position: fixed;
-    top: 40px;
-    left: 32px;
+    top: 26px;
+    left: 30px;
   }
 
   .tool {
