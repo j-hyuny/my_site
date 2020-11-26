@@ -18,13 +18,13 @@ section {
   clip-path: circle(0px at center center); /*이미지에 마스크 적용*/
 }
 
-.contents_01 {
+.title_text {
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-.contents_01 {
+.title_text {
   position: relative;
   margin-top: 200vh;
   background: #fff;
@@ -32,35 +32,30 @@ section {
   z-index: 10;
 }
 
-.contents_01 h4 {
+.title_text > h4 {
   font-size: 40px;
   font-weight: 700;
   padding-top: 130px;
 }
 
-.contents_01 p {
+.title_text > p {
   font-size: 17px;
   line-height: 1.6;
   padding: 50px 0 130px;
 }
 
-.cards {
-  max-width: 1000px;
-  /* align-items: center; */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+/* card */
+/* .web {
   margin: 0 auto;
 }
 
-.card {
-  /* width: 640px;
-  height: 400px; */
-  background: #c4c4c4;
-  cursor: pointer;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
+.web_cards {
+  width: 94%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
-/* 중앙정렬 필요 */
+.section_01 .photo {
+  display: block;
+} */

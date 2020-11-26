@@ -20,7 +20,7 @@
 .main_slide {
   position: relative;
   margin-bottom: 70px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .arrow {
@@ -46,7 +46,8 @@
 }
 
 .slide_01 {
-  /* max-width: 1310px; */
+  margin: 0 auto;
+  /* 사이즈 지정 */
 }
 
 .slide_01 .item {
