@@ -13,9 +13,9 @@ section {
   left: 0;
   width: 100%;
   height: 90vh;
-  background: url('../images/contents/scroll_effect_bg.jpg') no-repeat center / cover;
-  background-attachment: fixed;
-  clip-path: circle(0px at center center);
+  background: url('../images/03_contents/scroll_effect_bg.jpg') no-repeat center / cover; /*포지션, 사이즈*/
+  background-attachment: fixed; /*bg 고정*/
+  clip-path: circle(0px at center center); /*이미지에 마스크 적용*/
 }
 
 .title_text {
@@ -46,5 +46,20 @@ section {
 
 /* card */
 .cards {
+  max-width: 1000px;
+  /* align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   margin: 0 auto;
+}
+
+.card {
+  /* width: 640px;
+  height: 400px; */
+  background: #c4c4c4;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
 }
