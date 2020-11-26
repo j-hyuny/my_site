@@ -24,10 +24,11 @@
   font-weight: 500;
   line-height: 30px;
   left: 310px;
-  bottom: 100px;
+  bottom: 50px;
 }
 
 .btn {
   position: absolute;
-  right: 0;
+  top: 50%;
+  right: 30px;
 }
