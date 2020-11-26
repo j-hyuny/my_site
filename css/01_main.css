@@ -1,27 +1,30 @@
 .main_text {
-  display: block;
-  text-align: center;
-  justify-content: center;
-  position: absolute; /*이미지 위로 보이게*/
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 1300px;
+}
+
+.text {
   max-width: 1300px;
 }
 
 .main_text h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 60px;
   font-weight: 700;
   color: #2e2e2e;
 }
 
 .main_text p {
+  position: absolute;
   color: #ffffff;
   text-align: left;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
-  left: 0;
+  left: 310px;
+  bottom: 100px;
 }
 
 .btn {
