@@ -206,7 +206,7 @@ p {
 /* 미디어 쿼리  모바일*/
 @media (max-width: 770px) {
   .container {
-    width: 96%; /*반응형*/
+    width: 92%; /*반응형*/
   }
 
   .header {
@@ -277,6 +277,6 @@ p {
 
   .tool {
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 120px;
   }
 }
