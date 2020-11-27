@@ -63,13 +63,12 @@ section {
   overflow: hidden;
 }
 
-.cards .card .card_info > h4 {
-  align-items: center;
-  justify-content: center;
+.card_info h4 {
   font-size: 17px;
   font-weight: 300;
 }
 
-.cards .card .card_info .btn {
+.card_info img {
   width: 135px;
+  margin: 0 auto;
 }
