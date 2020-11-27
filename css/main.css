@@ -4,7 +4,7 @@
 }
 
 .main_text {
-  max-width: 1200px;
+  max-width: 1400px;
   height: 100vh;
   margin: 0 auto;
   position: relative;
@@ -17,6 +17,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #2e2e2e;
 }
 
 .main_text p {
@@ -26,11 +27,12 @@
   position: absolute;
   bottom: 50px;
   left: 50px;
+  color: #fff;
 }
 
 .btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 30px;
+  right: 100px;
 }
