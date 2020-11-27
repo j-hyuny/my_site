@@ -47,7 +47,7 @@ section {
 /* card */
 .cards {
   max-width: 1000px;
-  /* align-items: center; */
+  width: 92%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -55,8 +55,6 @@ section {
 }
 
 .card {
-  /* width: 640px;
-  height: 400px; */
   background: #c4c4c4;
   cursor: pointer;
   border-radius: 4px;
