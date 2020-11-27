@@ -79,7 +79,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 83%;
 }
 
 .nav a {
@@ -87,6 +87,10 @@ p {
   padding: 0 20px;
   height: 44px;
   line-height: 44px;
+}
+
+.nav a:last-child {
+  padding: inherit;
 }
 
 .bars {
