@@ -45,6 +45,23 @@ section {
 }
 
 /* card */
-.cards {
+.web_cards {
   margin: 0 auto;
+  display: block;
+}
+
+.web_cards .card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  background: initial;
+  border-radius: 0;
+}
+
+.cards .card .card_photo {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cards .card .card_info {
 }
