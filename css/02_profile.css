@@ -222,7 +222,6 @@ p {
     height: 48px;
     display: flex;
     align-items: center;
-    /* position: absolute; */
     position: fixed;
     max-height: initial;
     top: 0;
@@ -255,19 +254,8 @@ p {
   }
 
   .nav li a {
-    /* display: block; */
     padding: 20px 0;
   }
-
-  /* .nav li a:nth-child(2),
-  .nav li a:nth-child(3),
-  .nav li a:nth-child(4),
-  .nav li a:nth-child(5),
-  .nav li a:nth-child(6) {
-    display: block;
-    font-size: 17px;
-    padding: 20px;
-  } */
 
   .logo {
     position: absolute;
@@ -298,9 +286,4 @@ p {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
-
-  /* .logo {
-    width: 120px;
-    margin-right: auto;
-  } */
 }
