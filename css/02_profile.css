@@ -189,18 +189,28 @@ p {
   padding-bottom: 150px;
 }
 
+/* tool 정렬 필요 */
 .tool {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 200px;
   /* flex-wrap: wrap; */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tool li {
+  display: block;
+  align-items: center;
+}
+
+.tool li img {
+  width: 83px;
+  padding-bottom: 10px;
 }
 
 .tool p {
   font-size: 15px;
   font-weight: 400;
-  padding: 10px 0 50px;
   line-height: 1.4;
+  margin-bottom: 50px;
 }
 
 /* footer */
@@ -213,8 +223,8 @@ p {
   align-items: center;
   justify-content: center;
   color: #86868b;
-  padding: 20px 0;
   font-size: 11px;
+  padding: 20px 0;
 }
 
 /* 미디어 쿼리  모바일*/
