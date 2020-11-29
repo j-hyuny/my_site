@@ -1,6 +1,12 @@
+.figma {
+  height: 100vh;
+  background: url(../images/06_figma/figma_bg.png) no-repeat center / cover;
+}
+
 .title {
-  position: absolute;
+  position: relative;
   align-items: center;
+  /* margin: 0 auto; */
 }
 
 .title h2 {
