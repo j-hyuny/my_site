@@ -54,7 +54,7 @@ p {
 .header {
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
-  color: #ffffff;
+  color: #f5f5f7;
   position: fixed;
   width: 100%;
   max-height: 44px;
@@ -62,6 +62,15 @@ p {
   left: 0;
   box-sizing: border-box;
   z-index: 100;
+}
+
+.header .nav li {
+  opacity: 0.8;
+}
+
+.header .nav li:hover {
+  opacity: initial;
+  color: #fff;
 }
 
 .header .container {
