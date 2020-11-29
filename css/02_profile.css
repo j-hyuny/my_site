@@ -191,8 +191,8 @@ p {
 /* tool 정렬 필요 */
 .tool {
   display: grid;
-  /* flex-wrap: wrap; */
   grid-template-columns: repeat(4, 1fr);
+  /* flex-wrap: wrap; */
 }
 
 .tool li {
