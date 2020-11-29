@@ -188,7 +188,6 @@ p {
   padding-bottom: 150px;
 }
 
-/* tool 정렬 필요 */
 .tool {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -201,6 +200,7 @@ p {
 }
 
 .tool li img {
+  display: inline-block;
   width: 83px;
   padding-bottom: 10px;
 }
