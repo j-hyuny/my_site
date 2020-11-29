@@ -36,3 +36,19 @@
   transform: translateY(-50%);
   right: 100px;
 }
+
+/* 미디어 쿼리  모바일*/
+@media (max-width: 770px) {
+  .main_text p {
+    bottom: 50px;
+    left: 30px;
+  }
+
+  .btn {
+    position: absolute;
+    margin: 0 auto;
+    top: 55%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
