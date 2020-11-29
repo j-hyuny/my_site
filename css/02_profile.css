@@ -276,7 +276,7 @@ p {
     display: block;
     top: 50%;
     transform: translateY(-50%);
-    left: 0;
+    left: 15px;
   }
 
   .bars i {
