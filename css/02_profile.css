@@ -346,7 +346,7 @@ p {
 
   /* top_img  */
   .top_img {
-    background: url(../images/slide_01.jpg) no-repeat left / cover;
+    background: url(../images/slide_01.jpg) no-repeat center / cover;
     height: 100vh;
   }
 
