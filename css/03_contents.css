@@ -61,3 +61,15 @@ section {
   overflow: hidden;
   position: relative;
 }
+
+/* 미디어 쿼리  모바일*/
+@media (max-width: 770px) {
+  .cards {
+    width: 92%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  
