@@ -29,7 +29,8 @@
           <li><a href="#" class="on">Web</a></li>
           <li><a href="./06_figma.html">Figma</a></li>
         </ul>
-        <div class="bars"><i class="xi-bars"></i></div>
+        <!-- <div class="bars"><i class="xi-bars"></i></div> -->
+        <div class="bar"><span></span></div>
       </div>
     </div>
 
@@ -110,19 +111,34 @@
     <script src="./js/03_contents.js"></script>
     <script>
       // 메뉴
-      var bars = $('.bars')
-      var nav = $('.nav')
+      // var bars = $('.bar')
+      // var nav = $('.nav')
 
-      bars.on('click', function () {
-        nav.toggleClass('active')
-        $(this).toggleClass('fixed')
-        // $(this).css('position', 'fixed')
+      // bars.on('click', function () {
+      //   nav.toggleClass('active')
+      //   $(this).toggleClass('close')
+      //   // $(this).css('position', 'close')
 
-        if ($(this).find('i').hasClass('xi-bars')) {
-          $(this).find('i').attr('class', 'xi-close')
-        } else {
-          $(this).find('i').attr('class', 'xi-bars')
-        }
+      //   if ($(this).find('i').hasClass('xi-bars')) {
+      //     $(this).find('i').attr('class', 'xi-close')
+      //   } else {
+      //     $(this).find('i').attr('class', 'xi-bars')
+      //   }
+      // })
+      const bar = document.querySelector('.bar')
+      const nav = document.querySelector('.nav')
+      const link = document.querySelectorAll('.nav a')
+
+      bar.addEventListener('click', function () {
+        bar.classList.toggle('on')
+        nav.classList.toggle('on')
+      })
+
+      link.forEach((item) => {
+        item.addEventListener('click', function () {
+          bar.classList.remove('on')
+          nav.classList.remove('on')
+        })
       })
 
       // 헤더 스크립트
