@@ -232,6 +232,10 @@ p {
     width: 92%; /*반응형*/
   }
 
+  .container .logo {
+    width: 27px;
+  }
+
   .header {
     background: #2e2e2e;
     /* font-weight: 300; */
@@ -253,6 +257,13 @@ p {
     position: relative;
   }
 
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .nav {
     position: fixed;
     width: 100%;
@@ -267,38 +278,70 @@ p {
     transition: left 0.3s;
   }
 
-  .nav.active {
+  .nav.on {
     left: 0;
   }
 
   .nav li a {
     margin: 20px 0;
     font-size: 17px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   }
 
-  .logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
+  /* bar  */
+  /* hamburger bar */
   .bar {
     position: absolute;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 15px;
+    top: 12px;
+    left: 16px;
+    width: 26px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .bar i {
-    font-size: 30px;
+  .bar span {
+    width: 100%;
+    height: 1px;
+    background: white;
+    position: relative;
+    transition: background 0.3s;
   }
 
-  .bar.close {
-    position: fixed;
-    top: 26px;
-    left: 15px;
+  .bar span::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    transition: top 0.3s, transform 0.3s;
+  }
+
+  .bar span::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    transition: bottom 0.3s, transform 0.3s;
+  }
+
+  .bar.on span {
+    background: transparent;
+  }
+  .bar.on span::before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .bar.on span::after {
+    bottom: 0;
+    transform: rotate(+45deg);
   }
 
   /* top_img  */
