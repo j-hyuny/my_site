@@ -271,6 +271,7 @@ p {
     top: 0;
     left: -100%;
     background: #2e2e2e;
+    background: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -285,7 +286,8 @@ p {
   .nav li a {
     margin: 20px 0;
     font-size: 17px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid #424245;
+    width: 350px;
   }
 
   /* hamburger bar */
