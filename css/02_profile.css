@@ -348,6 +348,7 @@ p {
   /* top_img  */
   .top_img {
     background: url(../images/slide_01.jpg) no-repeat center / cover;
+    background-position-x: -250px;
     height: 100vh;
   }
 
