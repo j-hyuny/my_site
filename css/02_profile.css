@@ -212,6 +212,83 @@ p {
   margin-bottom: 50px;
 }
 
+/* test */
+.pie-chart {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.white_bg {
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pie-chart1 span {
+  background: #0d2940;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3cacff;
+  transform: translate(-50%, -50%);
+}
+
+.pie-chart2 span {
+  background: #330000;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff9f0d;
+  transform: translate(-50%, -50%);
+}
+
+.pie-chart7 span {
+  background: #f2bf26;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.pie-chart3 .percent {
+  color: inherit;
+}
+
 /* footer */
 .footer {
   background: #f5f5f7;
