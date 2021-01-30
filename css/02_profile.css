@@ -239,7 +239,7 @@ p {
   .header {
     background: #2e2e2e;
     /* font-weight: 300; */
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     padding: 0 16px;
     height: 48px;
     display: flex;
