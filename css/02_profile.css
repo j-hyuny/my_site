@@ -268,8 +268,94 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.pie-chart3 span {
+  background: #0d2940;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3cacff;
+  transform: translate(-50%, -50%);
+}
+
+.pie-chart4 span {
+  background: #ff7262;
+  /* background: conic-gradient(#ff7262, #a761ff, #26bffe, #16d189); */
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.pie-chart5 span {
+  background: #f2672e;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.pie-chart6 span {
+  background: #1d88c7;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
 .pie-chart7 span {
   background: #f2bf26;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.pie-chart8 span {
+  background: #74ccf2;
   display: block;
   position: absolute;
   top: 50%;
